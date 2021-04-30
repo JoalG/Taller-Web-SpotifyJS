@@ -116,7 +116,7 @@ function showArtists() {
         cardsHtml += `
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-flex">
                     <div class="card text-dark ">
-                        <div class="img1"><img src="cardBackground.png" alt=""></div>
+                        <div class="img1"><img src="cardBackground.gif" alt=""></div>
                         <div class="img2"><img src=${element.images.length != 0? element.images[0].url:"default-image.jpg"} alt=""></div>
                         <div class="main-text">
                             <h2 id="name">${name}</h2>
@@ -172,7 +172,7 @@ function showTracks() {
         cardsHtml += `
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-flex">
                 <div class="card text-dark ">
-                    <div class="img1"><img src="cardBackground.png" alt=""></div>
+                    <div class="img1"><img src="cardBackground.gif" alt=""></div>
                     <div class="img2"><img src=${element.album.images.length != 0? element.album.images[0].url:"default-image.jpg"} alt=""></div>
                     <div class="main-text">
                         <h2 id="name">${name}</h2>

@@ -19,14 +19,21 @@ var settings = {
 
 function init() {
 
-    $('#btn-modal-save')[0].addEventListener('click', function() {
-        settings.headers.Authorization = "Bearer " + $('#modalTokenInput')[0].value;
-    });
-
     $('#btn-previouse')[0].addEventListener('click', previous);
     $('#btn-next')[0].addEventListener('click', next);
+
+    $('#artists')[0].addEventListener('click', search);
+    $('#tracks')[0].addEventListener('click', search);
+
+    $('#limit')[0].addEventListener('change', search);
+
+    $('#btn-modal-save')[0].addEventListener('click', function() {
+        settings.headers.Authorization = "Bearer " + $('#modalTokenInput')[0].value;
+        search();
+    });
+
     $('#searchKey')[0].addEventListener("keydown", function(e) {
-        if (e.keyCode === 13) { //Se cae si está vacio
+        if (e.keyCode === 13) {
             search();
         }
     });

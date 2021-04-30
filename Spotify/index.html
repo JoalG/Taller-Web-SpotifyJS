@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Script tag</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/0985888a9b.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark text-light">
+
+    <div class="container-fluid"></div>
+
+
+    <div class="container-fluid ">
+
+        <nav class="navbar navbar-expand-md navbar-darkpy-2 bg-dark">
+            <a class="navbar-brand font-weight-bold" href="#">
+                <img src="SpotifyLogo.svg" class="img-fluid md-2" alt="Spotify Logo" width="250" height="150">
+            </a>
+        </nav>
+    </div>
+
+    <div class="container-fluid my-3">
+        <div class="row">
+            <div class="col-md-3 ">
+                <label for="searchKey">Search:</label>
+                <input id="searchKey" class="form-control" type="text" placeholder="">
+            </div>
+            <div class="col-md-3 d-flex justify-content-center ">
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" id="artists" name="optradio" checked>Artists
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" id="tracks" name="optradio">Tracks
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="form-group">
+                    <label for="sel1">Limit:</label>
+                    <select id="limit" class="form-control" id="sel1">
+                      <option>10</option>
+                      <option>20</option>
+                      <option>30</option>
+                      <option>50</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="btn-group float-right mt-4 pt-2 btn-block">
+                    <button id="btn-previouse" class="btn btn-secondary" disabled><i class="fas fa-chevron-left"></i> Previouse</button>
+                    <button id="btn-number" class="btn btn-secondary" disabled>1</button>
+                    <button id="btn-next" class="btn btn-secondary" disabled>Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="cards-area" class="container-fluid my-3">
+        <div id="cards-row" class="row">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Modal -->
+    <div id="modal" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-dark">
+                    <h1 class="modal-title" id="exampleModalLabel"> <i class="fa fa-spotify text-success" aria-hidden="true"></i> Spotify Token</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-input text-dark">
+                        <label for="modalTokenInput">Please enter the Spotify search token:</label>
+                        <input id="modalTokenInput" class="form-control" type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id="btn-modal-save" type="button" class="btn btn-success" data-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Vendor JS (los comprados)-->
+
+    <!-- JS (Mis JS) -->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

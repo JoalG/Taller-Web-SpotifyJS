@@ -1,0 +1,113 @@
+.card {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 10%;
+}
+
+.img1 img {
+    height: 150px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
+.img2 img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50px;
+    border: 5px solid rgb(243, 243, 243);
+    margin-top: -80px;
+}
+
+.card:hover {
+    opacity: 0.95;
+    box-shadow: 0 0 40px rgba(46, 189, 89, 0.5);
+    transition: .7s;
+}
+
+.main-text {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.main-text h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 0 10px;
+    margin-top: -5%;
+    color: #2ebd59;
+    max-height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.main-text p {
+    font-size: 16px;
+}
+
+.main-text .genresItems p {
+    font-size: 16px;
+}
+
+.socials {
+    text-align: center;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.socials i {
+    font-size: 20px;
+    color: #2ebd59;
+    padding: 0 10px;
+}
+
+#genres {
+    max-height: 60px;
+    overflow-y: scroll;
+    margin-bottom: 50px;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 10px;
+}

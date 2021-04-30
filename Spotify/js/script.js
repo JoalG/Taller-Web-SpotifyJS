@@ -21,7 +21,6 @@ function init() {
 
     $('#btn-modal-save')[0].addEventListener('click', function() {
         settings.headers.Authorization = "Bearer " + $('#modalTokenInput')[0].value;
-        search();
     });
 
     $('#btn-previouse')[0].addEventListener('click', previous);
